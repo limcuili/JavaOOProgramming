@@ -10,16 +10,16 @@ public class IntervalTest {
         System.out.println("interval b = " + b); // expect "interval b = [-15.0, 18.0]"
 
         // expect "True, True, True, False, False"
-        boolean c = a.contains(-15.0);
-        System.out.print(c + ", ");
-        boolean c = a.contains(18.0);
-        System.out.print(c + ", ");
-        boolean c = a.contains(10.0);
-        System.out.print(c + ", ");
-        boolean c = a.contains(-100.0);
-        System.out.print(c + ", ");
-        boolean c = a.contains(100.0);
-        System.out.print(c);
+        boolean c1 = a.contains(-15.0);
+        System.out.print(c1 + ", ");
+        boolean c2 = a.contains(18.0);
+        System.out.print(c2 + ", ");
+        boolean c3 = a.contains(10.0);
+        System.out.print(c3 + ", ");
+        boolean c4 = a.contains(-100.0);
+        System.out.print(c4 + ", ");
+        boolean c5 = a.contains(100.0);
+        System.out.print(c5);
 
         double d = a.length();
         System.out.println("length of interval a = " + d); // expect 33.0
@@ -33,7 +33,7 @@ public class IntervalTest {
         boolean g = a.intersects(b);
         System.out.println("interval a and b intersects = " + g); // expect True
 
-        boolean h = e.intersect(a);
+        boolean h = e.intersects(a);
         System.out.println("interval a and e intersects = " + h); // expect False
     }
 

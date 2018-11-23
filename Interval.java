@@ -6,6 +6,11 @@ public class Interval {
         this.right = right;
     }
 
+    public String toString() { }
+
     public boolean contains(double x) { return (left <= x && x <= right); }
 
+    public double length() {}
+
+    public boolean intersects(Interval b) { }
 }
