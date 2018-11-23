@@ -36,6 +36,18 @@ public class IntervalTest {
 
         boolean h = e.intersects(a);
         System.out.println("interval a and e intersects = " + h); // expect False
+
+        if (a.contains(0.0)) {
+            System.out.println("interval a contains 0."); // expect this outcome
+        } else {
+            System.out.println("interval a does not contain 0.");
+        }
+
+        if (e.contains(0.0)) {
+            System.out.println("interval e contains 0.");
+        } else {
+            System.out.println("interval e does not contain 0."); // expect this outcome
+        }
     }
 
 }
