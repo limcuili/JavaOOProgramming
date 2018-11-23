@@ -7,7 +7,7 @@ public class IntervalTest {
         System.out.println("interval a = " + a); // expect "interval a = [-15.0, 18.0]"
 
         Interval b = new Interval (-14.1, 18.9);
-        System.out.println("interval b = " + b); // expect "interval b = [-15.0, 18.0]"
+        System.out.println("interval b = " + b); // expect "interval b = [-14.1, 18.9]"
 
         // expect "True, True, True, False, False"
         boolean c1 = a.contains(-15.0);
@@ -20,6 +20,7 @@ public class IntervalTest {
         System.out.print(c4 + ", ");
         boolean c5 = a.contains(100.0);
         System.out.print(c5);
+        System.out.println();
 
         double d = a.length();
         System.out.println("length of interval a = " + d); // expect 33.0

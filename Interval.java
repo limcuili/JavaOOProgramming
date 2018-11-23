@@ -6,11 +6,11 @@ public class Interval {
         this.right = right;
     }
 
-    public String toString() { }
+    public String toString() { return ("[" + left + ", " + right + "]"); }
 
     public boolean contains(double x) { return (left <= x && x <= right); }
 
-    public double length() {}
+    public double length() { return 0.0; }
 
-    public boolean intersects(Interval b) { }
+    public boolean intersects(Interval b) { return true; }
 }
