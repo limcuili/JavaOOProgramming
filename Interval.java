@@ -10,7 +10,7 @@ public class Interval {
 
     public boolean contains(double x) { return (left <= x && x <= right); }
 
-    public double length() { return 0.0; }
+    public double length() { return (right - left); }
 
-    public boolean intersects(Interval b) { return true; }
+    public boolean intersects(Interval b) { return (this.left <= b.right && b.left <= this.right); }
 }
