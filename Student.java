@@ -1,3 +1,6 @@
+// compile with 'javac Student.java'
+// to be run with LectureCourse.java
+
 public class Student {
 
     private String name;
